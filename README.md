@@ -1,7 +1,7 @@
-Project Name
+Gulp Flow
 ====================================
 
-This repository contains the source files of the Project Name.
+This repository contains the source files of the Gulp Flow.
 
 
 ## Development
@@ -30,6 +30,7 @@ Before developing, make sure you have the following tools installed and availabl
 `app/content` – HTML fragments of the page sections
 `app/files` – custom files
 `app/fonts` – custom fonts
+`app/iconfonts` – custom iconfont
 `app/img` – custom images
 `app/js` – custom JavaScript files
 `app/scss` – SCSS style files
