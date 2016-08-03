@@ -26,6 +26,7 @@ Before developing, make sure you have the following tools installed and availabl
 ### Directory Structure
 
 `dist` – output of the build, static HTML and assets ready to be served
+
 `app` – top-level directory of the source
 `app/content` – HTML fragments of the page sections
 `app/files` – custom files
