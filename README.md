@@ -16,7 +16,7 @@ Before developing, make sure you have the following tools installed and availabl
 * Various Gulp plugins
 
 
-### Instalation
+## Instalation
 
 Before initiating the first build, run `npm install` to make sure all the dependencies are installed properly.
 
