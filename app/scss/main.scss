@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import "normalize";
+@import "fonts";
+@import "iconfont";
+@import "mixins";
+@import "helper";
+@import "animate";
+
+
+//----------------------------------------------------------------------------------------
+// Media Queries
+//----------------------------------------------------------------------------------------
+$media-mobile-small: 480px !default;
+$media-mobile-max: 767px !default;
+$media-tablet-min: 768px !default;
+$media-tablet-max: 991px !default;
+$media-desktop-min: 1025px !default;
+$media-desktop-max: 1199px !default;
+$media-large-desktop-min: 1200px !default;
+
+@media (max-width: $media-desktop-max){
+
+}
+
+@media (max-width: $media-tablet-max){
+
+}
+
+@media (max-width: $media-mobile-max){
+
+}
+
+@media (max-width: $media-mobile-small){
+}
