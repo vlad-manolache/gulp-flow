@@ -269,16 +269,18 @@ gulp.task('build:iconfont', function(){
     return gulp.src(paths.iconfont.src, {base: 'app/'})
     .pipe(plugins.newer(paths.iconfont.dest))
     .pipe(plugins.iconfontCss({
-      fontName: 'iconfont',
-      path: 'app/scss/_template.scss',
-      targetPath: '../../app/scss/_iconfont.scss',
-      fontPath: '../fonts/'
+        fontName: 'iconfont',
+        path: 'app/scss/_template.scss',
+        targetPath: '../../app/scss/_iconfont.scss',
+        fontPath: '../fonts/'
     }))
     .pipe(plugins.iconfont({
         fontName: 'iconfont',
+        prependUnicode: true,
         fontHeight: 1024,
         formats: ['ttf', 'eot', 'woff', 'svg'],
-        normalize: true
+        normalize: true,
+        timestamp: Math.round(Date.now()/1000)
     }))
     .pipe(gulp.dest(paths.iconfont.dest));
 });
