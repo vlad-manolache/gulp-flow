@@ -329,6 +329,8 @@ gulp.task('notice:built', function() {
  * Watch
  */
 gulp.task('watch', function () {
+    var queue = plugins.watchSequence(300);
+
 	gulp.watch(paths.plugins.src, ['bower:compile']);
 	gulp.watch(paths.css.src, ['build:styles']);
 	gulp.watch(paths.js.src, ['build:js']);
@@ -336,7 +338,7 @@ gulp.task('watch', function () {
 	gulp.watch(paths.html.src, ['build:html:newer']);
     gulp.watch(paths.html.watch, ['build:html']);
 	gulp.watch(paths.fonts.src, ['copy:fonts']);
-    gulp.watch(paths.iconfont.src, ['build:iconfont']);
+    gulp.watch(paths.iconfont.src, queue.getHandler('build:iconfont','build:styles'));
 	gulp.watch(paths.files.src, ['copy:files']);
 	gulp.watch('gulpfile.js', { interval: 500 }, ['developmentSequence']);
 	plugins.connect.reload();

@@ -57,6 +57,7 @@ var packages = {
     "gulp-uglifycss"             :             "gulp-uglifycss@1.0.6",
     "gulp-useref"                :                "gulp-useref@3.0.4",
     "gulp-util"                  :                  "gulp-util@3.0.7",
+    "gulp-watch-sequence"        :        "gulp-watch-sequence@1.0.0",
     "imagemin-mozjpeg"           :           "imagemin-mozjpeg@6.0.0",
     "imagemin-pngquant"          :          "imagemin-pngquant@5.0.0",
     "main-bower-files"           :          "main-bower-files@2.11.0",
