@@ -44,8 +44,7 @@ var paths = {
     },
     js: {
         src: 'app/js/**/*.js',
-        dest: 'dist/js/',
-        modules: 'assets/js/modules/*.js'
+        dest: 'dist/js/'
     },
     plugins: {
         src: 'bower_components/**',
