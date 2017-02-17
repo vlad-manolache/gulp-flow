@@ -269,6 +269,7 @@ gulp.task('build:iconfont', function(){
     .pipe(plugins.newer(paths.iconfont.dest))
     .pipe(plugins.iconfontCss({
         fontName: 'iconfont',
+        cssClass: 'iconfont',
         path: 'app/scss/_template.scss',
         targetPath: '../../app/scss/_iconfont.scss',
         fontPath: '../fonts/'
